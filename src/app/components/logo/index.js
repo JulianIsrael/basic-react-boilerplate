@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Logo (props){
+import { Icon } from 'semantic-ui-react'
+
+const Logo = () => {
   return (
-    <h1>I'm the logo</h1>
+    <div>
+      <Icon circular name='table' size='big' />DataLoader
+    </div>
   )
 }
 

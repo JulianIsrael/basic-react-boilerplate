@@ -1,13 +1,20 @@
 import React from 'react';
 
 import Header from 'components/header';
+import Footer from 'components/footer';
+import Dragger from 'components/dragger';
+import Table from 'components/table';
 
-function Application(props){
+import style from './style.css';
+
+const Application = (props) => {
 
   return (
-    <div>
+    <div className= {style.application}>
       <Header/>
-       I'm the real application
+        <Dragger/>
+        <Table/>
+      <Footer/>
      </div>
   );
 }

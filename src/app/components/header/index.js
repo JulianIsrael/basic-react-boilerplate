@@ -1,14 +1,16 @@
 import React from 'react';
 
 import Logo from 'components/logo';
+import Divider from 'components/divider';
+import { Header } from 'semantic-ui-react'
 
-function Header(props){
+const HeaderCustom =() => {
   return (
-    <div>
+     <Header as='h3'>
+      <Divider/>
       <Logo/>
-      <div>I'm the header</div>
-    </div>
+    </Header>
   );
 }
 
-export default Header;
+export default HeaderCustom;
